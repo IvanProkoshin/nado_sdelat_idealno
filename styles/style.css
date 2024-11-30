@@ -13,7 +13,7 @@ body {
   position: relative;
 
   display: flex;
-  align-content: start;
+  align-items: flex-start;
   justify-content: center;
 
   padding-top: 60px;
@@ -62,7 +62,6 @@ video {
   line-height: 136px;
 
   max-width: 800px;
-  height: 400px;
 
   z-index: 1;
 }
