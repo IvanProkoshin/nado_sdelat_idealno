@@ -13,7 +13,7 @@ body {
   position: relative;
 
   display: flex;
-  align-content: start;
+  align-items: flex-start;
   justify-content: center;
 
   padding-top: 60px;
@@ -30,7 +30,7 @@ body::before {
   inset: 0;
 
   background-color: white;
-  opacity: 0.2;
+  opacity: 0.3;
 
   z-index: 0;
 }
@@ -62,7 +62,6 @@ video {
   line-height: 136px;
 
   max-width: 800px;
-  height: 400px;
 
   z-index: 1;
 }
@@ -73,12 +72,13 @@ video {
 
 .title:hover {
   color: rgb(76, 76, 76);
+  cursor: default;
 }
 
 .title:hover::before {
   position: absolute;
   top: 180px;
-  right: 0;
+  right: 20px;
 
   display: inline-block;
   padding: 36px 44px;
@@ -93,6 +93,8 @@ video {
   text-transform: none;
   text-align: left;
 
+  letter-spacing: 0px;
+
   line-height: 35px;
 
   background-color: white;
@@ -100,5 +102,5 @@ video {
   border: 2px solid black;
 
   border-radius: 20px;
-  box-shadow: 0 14px 0 black;
+  box-shadow: 0 12px 0 black;
 }
